@@ -22,7 +22,8 @@ async function getAdvice() {
     const { data } = await axios.get<AdviceApiResponse>(
       "https://api.adviceslip.com/advice", {
         headers: {
-          'Cache-Control': 'no-cache',
+          'Access-Control-Allow-Origin': 'https://api.adviceslip.com/advice',
+          'Cache-Control': 'no-cache, max-age=0',
           'Pragma': 'no-cache',
           'Expires': '0',
         },
