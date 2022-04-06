@@ -20,14 +20,7 @@ interface AdviceApiResponse {
 async function getAdvice() {
   try {
     const { data } = await axios.get<AdviceApiResponse>(
-      "https://api.adviceslip.com/advice", {
-        headers: {
-          'Access-Control-Allow-Origin': 'https://advice-generator-02.vercel.app',
-          'Cache-Control': 'no-cache, max-age=0',
-          'Pragma': 'no-cache',
-          'Expires': '0',
-        },
-      }
+      "https://api.adviceslip.com/advice"
     );
 
     return data;
