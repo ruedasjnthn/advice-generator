@@ -20,7 +20,7 @@ interface AdviceApiResponse {
 async function getAdvice() {
   try {
     const { data } = await axios.get<AdviceApiResponse>(
-      "https://api.adviceslip.com/advice"
+      `https://api.adviceslip.com/advice&timestamp=${new Date().getTime()}`
     );
 
     return data;
