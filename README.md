@@ -7,7 +7,7 @@ A website that generate random advice using [Advice Slip API](https://api.advice
 
 ## Live Site
 
-- Live Site URL: https://s-3.herokuapp.com
+- Live Site URL: https://advice-generator-02.vercel.app
 
 ## Techstack Used
 
